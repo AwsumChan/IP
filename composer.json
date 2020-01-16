@@ -1,5 +1,5 @@
 {
-    "name": "lifo/ip",
+    "name": "awsumchan/ip",
     "description": "IP address helper PHP library for working with IPv4 and IPv6 addresses",
     "keywords": ["ip address", "ip", "ipv4", "ipv6"],
     "type": "library",
@@ -8,6 +8,10 @@
         {
             "name": "Jason Morriss",
             "email": "lifo2013@gmail.com"
+        },
+        {
+            "name": "Daniel Saunders",
+            "email": "dsaunders@dansaunders.me"
         }
     ],
     "require": {
@@ -15,6 +19,6 @@
         "ext-bcmath": "*"
     },
     "autoload": {
-        "psr-0": { "Lifo\\IP\\": "src/" }
+        "psr-0": { "AwsumChan\\IP\\": "src/" }
     }
 }

@@ -1,13 +1,14 @@
 <?php
 /**
- * This file is part of the Lifo\IP PHP Library.
+ * This file is part of the AwsumChan\IP PHP Library.
  *
  * (c) Jason Morriss <lifo2013@gmail.com>
+ * (c) Daniel Saunders <dsaunders@dansaunders.me>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Lifo\IP;
+namespace AwsumChan\IP;
 
 /**
  * BCMath helper class.
@@ -102,7 +103,7 @@ abstract class BC
 
         $value = '';
         for ($i=0; $i<$len; $i++) {
-            $value .= (($left{$i} + 0) & ($right{$i} + 0)) ? '1' : '0';
+            $value .= (($left[$i] + 0) & ($right[$i] + 0)) ? '1' : '0';
         }
         return self::bcbindec($value != '' ? $value : '0');
     }
@@ -116,7 +117,7 @@ abstract class BC
 
         $value = '';
         for ($i=0; $i<$len; $i++) {
-            $value .= (($left{$i} + 0) | ($right{$i} + 0)) ? '1' : '0';
+            $value .= (($left[$i] + 0) | ($right[$i] + 0)) ? '1' : '0';
         }
         return self::bcbindec($value != '' ? $value : '0');
     }
@@ -130,7 +131,7 @@ abstract class BC
 
         $value = '';
         for ($i=0; $i<$len; $i++) {
-            $value .= (($left{$i} + 0) ^ ($right{$i} + 0)) ? '1' : '0';
+            $value .= (($left[$i] + 0) ^ ($right[$i] + 0)) ? '1' : '0';
         }
         return self::bcbindec($value != '' ? $value : '0');
     }
@@ -144,7 +145,7 @@ abstract class BC
         $len = self::_bitwise($left, $right, $bits);
         $value = '';
         for ($i=0; $i<$len; $i++) {
-            $value .= $left{$i} == '1' ? '0' : '1';
+            $value .= $left[$i] == '1' ? '0' : '1';
         }
         return self::bcbindec($value);
     }

@@ -16,8 +16,8 @@ The translation routines are IP agnostic, meaning they don't care if you pass in
 All IP calculations are done in `Decimal` which is perfect for storing in databases. 
 
 ```php
-use Lifo\IP\IP;
-use Lifo\IP\CIDR:
+use AwsumChan\IP\IP;
+use AwsumChan\IP\CIDR:
 
 // IPv4
 echo '127.0.0.1 = ', IP::inet_ptod('127.0.0.1'), "\n";

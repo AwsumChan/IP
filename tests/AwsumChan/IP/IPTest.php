@@ -1,6 +1,6 @@
 <?php
 
-use Lifo\IP\IP;
+use AwsumChan\IP\IP;
 
 class IPTest extends \PHPUnit_Framework_TestCase
 {

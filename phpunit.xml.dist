@@ -7,7 +7,7 @@
     </php>
 
     <testsuites>
-        <testsuite name="Lifo\IP Test Suite">
+        <testsuite name="AwsumChan\IP Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
